@@ -12,9 +12,9 @@
 		700C1B3C1BF64DD900C62474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700C1B3A1BF64DD900C62474 /* Main.storyboard */; };
 		700C1B3E1BF64DD900C62474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700C1B3D1BF64DD900C62474 /* Assets.xcassets */; };
 		700C1B411BF64DD900C62474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700C1B3F1BF64DD900C62474 /* LaunchScreen.storyboard */; };
-		7088E1EB1BF651BD0008158E /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EA1BF651BD0008158E /* TipCalculator.swift */; };
-		7088E1ED1BF651D60008158E /* JifExampleSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EC1BF651D60008158E /* JifExampleSpecs.swift */; };
-		7088E1EE1BF651EB0008158E /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EA1BF651BD0008158E /* TipCalculator.swift */; };
+		7088E1EB1BF651BD0008158E /* JFFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EA1BF651BD0008158E /* JFFileLogger.swift */; };
+		7088E1ED1BF651D60008158E /* JFFileLoggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EC1BF651D60008158E /* JFFileLoggerSpec.swift */; };
+		7088E1EE1BF651EB0008158E /* JFFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EA1BF651BD0008158E /* JFFileLogger.swift */; };
 		A6E36AB6E6279F5044FBB5A0 /* Pods_JiffyExampleSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658446C5C15DD6C3E7F96BC0 /* Pods_JiffyExampleSpecs.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -41,8 +41,8 @@
 		700C1B421BF64DD900C62474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		700C1B4C1BF64DF000C62474 /* JiffyExampleSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiffyExampleSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		700C1B501BF64DF000C62474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7088E1EA1BF651BD0008158E /* TipCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculator.swift; sourceTree = "<group>"; };
-		7088E1EC1BF651D60008158E /* JifExampleSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JifExampleSpecs.swift; sourceTree = "<group>"; };
+		7088E1EA1BF651BD0008158E /* JFFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFFileLogger.swift; sourceTree = "<group>"; };
+		7088E1EC1BF651D60008158E /* JFFileLoggerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFFileLoggerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		700C1B351BF64DD800C62474 /* JiffyExample */ = {
 			isa = PBXGroup;
 			children = (
-				7088E1EA1BF651BD0008158E /* TipCalculator.swift */,
+				7088E1EA1BF651BD0008158E /* JFFileLogger.swift */,
 				700C1B361BF64DD800C62474 /* AppDelegate.swift */,
 				700C1B381BF64DD900C62474 /* ViewController.swift */,
 				700C1B3A1BF64DD900C62474 /* Main.storyboard */,
@@ -118,7 +118,7 @@
 		700C1B4D1BF64DF000C62474 /* JiffyExampleSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				7088E1EC1BF651D60008158E /* JifExampleSpecs.swift */,
+				7088E1EC1BF651D60008158E /* JFFileLoggerSpec.swift */,
 				700C1B501BF64DF000C62474 /* Info.plist */,
 			);
 			path = JiffyExampleSpecs;
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7088E1EB1BF651BD0008158E /* TipCalculator.swift in Sources */,
+				7088E1EB1BF651BD0008158E /* JFFileLogger.swift in Sources */,
 				700C1B391BF64DD900C62474 /* ViewController.swift in Sources */,
 				700C1B371BF64DD800C62474 /* AppDelegate.swift in Sources */,
 			);
@@ -286,8 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7088E1EE1BF651EB0008158E /* TipCalculator.swift in Sources */,
-				7088E1ED1BF651D60008158E /* JifExampleSpecs.swift in Sources */,
+				7088E1EE1BF651EB0008158E /* JFFileLogger.swift in Sources */,
+				7088E1ED1BF651D60008158E /* JFFileLoggerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
