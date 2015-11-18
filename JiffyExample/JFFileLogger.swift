@@ -10,6 +10,13 @@ import Foundation
 
 public class JFFileLogger {    
     var queue: [String] = []
+    var useTimestamps = false
+    var dateProvider: JFDateProvider!
+
+    init(timestamps: Bool, dateProvider: JFDateProvider) {
+        self.useTimestamps = timestamps
+        self.dateProvider = dateProvider;
+    }
     
     func log(log: String...) {        
         var theArgs: [String] = [];
@@ -20,7 +27,12 @@ public class JFFileLogger {
         
         let logLine: String = log[0];
         let logEntry = logLine.formatWithArguments(theArgs)
-        self.queue.append(logEntry)
+        
+        if(self.useTimestamps){
+            self.queue.append(String(format:"%@ - %@", self.dateProvider.dateForLogs(), logEntry))
+        }else{
+            self.queue.append(logEntry)
+        }
     }
 
     func lastEntry() -> String! {
