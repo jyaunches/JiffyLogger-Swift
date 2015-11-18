@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import JiffyExample
 
 public class JFFileLogger {    
     var queue: [String] = []
@@ -22,5 +21,13 @@ public class JFFileLogger {
         let logLine: String = log[0];
         let logEntry = logLine.formatWithArguments(theArgs)
         self.queue.append(logEntry)
+    }
+
+    func lastEntry() -> String! {
+        if(self.queue.count > 0){
+            return self.queue[self.queue.count-1];
+        }else{
+            return nil
+        }
     }
 }

@@ -124,9 +124,9 @@
 		700C1B4D1BF64DF000C62474 /* JiffyExampleSpecs */ = {
 			isa = PBXGroup;
 			children = (
+				7081BC771BFD031000FAA374 /* StringHelperSpec.swift */,
 				7088E1EC1BF651D60008158E /* JFFileLoggerSpec.swift */,
 				700C1B501BF64DF000C62474 /* Info.plist */,
-				7081BC771BFD031000FAA374 /* StringHelperSpec.swift */,
 			);
 			path = JiffyExampleSpecs;
 			sourceTree = "<group>";
