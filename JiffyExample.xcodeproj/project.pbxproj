@@ -13,6 +13,8 @@
 		700C1B3E1BF64DD900C62474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700C1B3D1BF64DD900C62474 /* Assets.xcassets */; };
 		700C1B411BF64DD900C62474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700C1B3F1BF64DD900C62474 /* LaunchScreen.storyboard */; };
 		70418A181BFA33C000F462D0 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70418A171BFA33C000F462D0 /* StringHelper.swift */; };
+		7081BC781BFD031000FAA374 /* StringHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081BC771BFD031000FAA374 /* StringHelperSpec.swift */; };
+		7081BC791BFD03C300FAA374 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70418A171BFA33C000F462D0 /* StringHelper.swift */; };
 		7088E1EB1BF651BD0008158E /* JFFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EA1BF651BD0008158E /* JFFileLogger.swift */; };
 		7088E1ED1BF651D60008158E /* JFFileLoggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EC1BF651D60008158E /* JFFileLoggerSpec.swift */; };
 		7088E1EE1BF651EB0008158E /* JFFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088E1EA1BF651BD0008158E /* JFFileLogger.swift */; };
@@ -43,6 +45,7 @@
 		700C1B4C1BF64DF000C62474 /* JiffyExampleSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiffyExampleSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		700C1B501BF64DF000C62474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70418A171BFA33C000F462D0 /* StringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		7081BC771BFD031000FAA374 /* StringHelperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelperSpec.swift; sourceTree = "<group>"; };
 		7088E1EA1BF651BD0008158E /* JFFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFFileLogger.swift; sourceTree = "<group>"; };
 		7088E1EC1BF651D60008158E /* JFFileLoggerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFFileLoggerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +126,7 @@
 			children = (
 				7088E1EC1BF651D60008158E /* JFFileLoggerSpec.swift */,
 				700C1B501BF64DF000C62474 /* Info.plist */,
+				7081BC771BFD031000FAA374 /* StringHelperSpec.swift */,
 			);
 			path = JiffyExampleSpecs;
 			sourceTree = "<group>";
@@ -290,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7081BC791BFD03C300FAA374 /* StringHelper.swift in Sources */,
 				7088E1EE1BF651EB0008158E /* JFFileLogger.swift in Sources */,
 				7088E1ED1BF651D60008158E /* JFFileLoggerSpec.swift in Sources */,
+				7081BC781BFD031000FAA374 /* StringHelperSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

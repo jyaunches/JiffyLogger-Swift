@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB1AC3665FB8F3ED8F25388A"
+               BlueprintIdentifier = "439F5B2A3252B9D67738EDA6B71FE2FF"
                BuildableName = "Pods_JiffyExampleSpecs.framework"
                BlueprintName = "Pods-JiffyExampleSpecs"
                ReferencedContainer = "container:Pods.xcodeproj">

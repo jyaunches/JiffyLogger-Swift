@@ -8,12 +8,27 @@
 
 import Foundation
 
+enum StringSubstituionError: ErrorType {
+    case NumberOfArguments(expecting: Int)
+    case InputFormatIncorrect
+}
+
 public extension String {
     func formatWithArguments(var theArgs: [String]) -> String {
         let result: String
         
+        let substitutionSpots = self.componentsSeparatedByString("%@").count - 1
+
+        if(theArgs.count > 10){
+            NSException(name: "StringSubstituionError", reason: "Too Many Arguments. Limit is 10.", userInfo: nil).raise()
+        }
+
+        if(substitutionSpots != theArgs.count){
+            NSException(name: "StringSubstituionError", reason: "Number of arguments doesn't match input.", userInfo: nil).raise()
+        }
+        
         if(theArgs.count > 0){
-            theArgs.appendContentsOf(["X", "X", "X", "X", "X", "X", "X", "X", "X", "X"])
+            theArgs.appendContentsOf(["", "", "", "", "", "", "", "", "", ""])
             result = String(format: self, theArgs[0], theArgs[1], theArgs[2], theArgs[3], theArgs[4], theArgs[5],
                 theArgs[6], theArgs[7], theArgs[8], theArgs[9])
         }else{

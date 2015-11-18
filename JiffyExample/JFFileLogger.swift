@@ -9,8 +9,7 @@
 import Foundation
 import JiffyExample
 
-public class JFFileLogger {
-    
+public class JFFileLogger {    
     var queue: [String] = []
     
     func log(log: String...) {        
@@ -21,9 +20,7 @@ public class JFFileLogger {
         }
         
         let logLine: String = log[0];
-        let logEntry: String = logLine.formatWithArguments(theArgs)        
-        self.queue.append(logEntry)        
+        let logEntry = logLine.formatWithArguments(theArgs)
+        self.queue.append(logEntry)
     }
-    
-    
 }
